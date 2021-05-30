@@ -200,6 +200,7 @@ int main(){
    cout<<"\n"<<" 9 --> To find if the number is Harshad Number"<<endl;
    cout<<endl;
    
+   cout<<"Enter a number from the above menu : ";
    cin>>var2;
 
    switch (var2)
