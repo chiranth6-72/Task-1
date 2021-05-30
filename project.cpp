@@ -207,10 +207,10 @@ int main(){
    {
    case '0':
        if (checkifprime(var1)){
-        cout<<"\n"<<var1<< " is a prime number.";
+        cout<<"\n"<<var1<< " is a prime number."<<endl;
        }
     else{
-        cout<<"\n"<<var1<<" is not a prime number."; 
+        cout<<"\n"<<var1<<" is not a prime number."<<endl; 
       }   
       break;
    
