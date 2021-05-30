@@ -188,16 +188,16 @@ int main(){
    cin>>var1;
   
    cout<<"Select from the following operations:"<<endl;   
-   cout<<" 0 --> To find if number is Prime number"<<endl;   
-   cout<<" 1 --> To find if the number is Square number"<<endl;   
-   cout<<" 2 --> To find if the number is Cube number"<<endl;   
-   cout<<" 3 --> To find the Factorial of that number"<<endl;   
-   cout<<" 4 --> To find if the number is Palindrome number"<<endl;   
-   cout<<" 5 --> To find if the number is Neon number"<<endl;   
-   cout<<" 6 --> To print Fibonacci series till that number"<<endl;   
-   cout<<" 7 --> To find if the number is Armstrong number"<<endl;   
-   cout<<" 8 --> To find if the number is Disarium number"<<endl;   
-   cout<<" 9 --> To find if the number is Harshad Number"<<endl;
+   cout<<"\n"<<" 0 --> To find if number is Prime number"<<endl;   
+   cout<<"\n"<<" 1 --> To find if the number is Square number"<<endl;   
+   cout<<"\n"<<" 2 --> To find if the number is Cube number"<<endl;   
+   cout<<"\n"<<" 3 --> To find the Factorial of that number"<<endl;   
+   cout<<"\n"<<" 4 --> To find if the number is Palindrome number"<<endl;   
+   cout<<"\n"<<" 5 --> To find if the number is Neon number"<<endl;   
+   cout<<"\n"<<" 6 --> To print Fibonacci series till that number"<<endl;   
+   cout<<"\n"<<" 7 --> To find if the number is Armstrong number"<<endl;   
+   cout<<"\n"<<" 8 --> To find if the number is Disarium number"<<endl;   
+   cout<<"\n"<<" 9 --> To find if the number is Harshad Number"<<endl;
    cout<<endl;
    
    cin>>var2;
