@@ -111,6 +111,8 @@ void fibo(int n){
 
 
 //8th
+//if input is given 153 it works on online ide's
+//not sure if it works on vs code
 bool ifArm(int n){
     int r, og, d=0, final=0, value;
     
