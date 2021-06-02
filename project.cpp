@@ -83,15 +83,14 @@ bool ifneon(int n){
     
       int sq = n*n;
       int sum = 0;
-      while (sq!=0)
-      {
-          sum += (sq%10);
-          sq /= 10;
+      while (sq!=0){
+          sum = sum + (sq % 10);
+          sq = sq / 10;
     }
-      if(sum==n){
-          return true;
-      }
-      else  return false;
+    if (sum==n){
+        return true;
+    }
+     else  return false;
 }
 
 
@@ -188,48 +187,32 @@ int main(){
    cin>>var1;
   
    cout<<"Select from the following operations:"<<endl;   
-   cout<<"\n"<<" 0 --> To find if number is Prime number"<<endl;   
-   cout<<"\n"<<" 1 --> To find if the number is Square number"<<endl;   
-   cout<<"\n"<<" 2 --> To find if the number is Cube number"<<endl;   
-   cout<<"\n"<<" 3 --> To find the Factorial of that number"<<endl;   
-   cout<<"\n"<<" 4 --> To find if the number is Palindrome number"<<endl;   
-   cout<<"\n"<<" 5 --> To find if the number is Neon number"<<endl;   
-   cout<<"\n"<<" 6 --> To print Fibonacci series till that number"<<endl;   
-   cout<<"\n"<<" 7 --> To find if the number is Armstrong number"<<endl;   
-   cout<<"\n"<<" 8 --> To find if the number is Disarium number"<<endl;   
-   cout<<"\n"<<" 9 --> To find if the number is Harshad Number"<<endl;
+   cout<<" 0 --> To find if number is Prime number"<<endl;   
+   cout<<" 1 --> To find if the number is Square number"<<endl;   
+   cout<<" 2 --> To find if the number is Cube number"<<endl;   
+   cout<<" 3 --> To find the Factorial of that number"<<endl;   
+   cout<<" 4 --> To find if the number is Palindrome number"<<endl;   
+   cout<<" 5 --> To find if the number is Neon number"<<endl;   
+   cout<<" 6 --> To print Fibonacci series till that number"<<endl;   
+   cout<<" 7 --> To find if the number is Armstrong number"<<endl;   
+   cout<<" 8 --> To find if the number is Disarium number"<<endl;   
+   cout<<" 9 --> To find if the number is Harshad Number"<<endl;
    cout<<endl;
    
-   cout<<"Enter a number from the above menu : ";
    cin>>var2;
 
    switch (var2)
    {
    case '0':
-       if (checkifprime(var1)){
-        cout<<"\n"<<var1<< " is a prime number."<<endl;
-       }
-    else{
-        cout<<"\n"<<var1<<" is not a prime number."<<endl; 
-      }   
-      break;
+       (checkifprime(var1))?cout<<"\n"<<var1<< " is a prime number.":cout<<"\n"<<var1<<" is not a prime number."; 
+        break;
    
    case '1':
-       if (isSquare(var1)){
-       cout<<"\n"<<var1<<" is square number"<<endl;
-      }
-   else{
-       cout<<"\n"<<var1<<" is not a square number"<<endl;
-      } 
+       (isSquare(var1))?cout<<"\n"<<var1<<" is square number"<<endl:cout<<"\n"<<var1<<" is not a square number"<<endl;
        break;
    
    case '2':
-       if (isCube(var1)){
-       cout<<"\n"<<var1<<" is a cube number"<<endl;
-    }
-   else{
-       cout<<"\n"<<var1<<" is not a cube number"<<endl;
-      }
+       (isCube(var1))?cout<<"\n"<<var1<<" is a cube number"<<endl:cout<<"\n"<<var1<<" is not a cube number"<<endl;
        break;
    
    case '3':
@@ -237,22 +220,11 @@ int main(){
        break;
    
    case '4':
-       if(pal(var1)){
-        cout<<"\n"<<var1<<" is a palindrome"<<endl;
-    }
-    else{
-        cout<<"\n"<<var1<<" is not a palindrome"<<endl;
-    }
+       (pal(var1))?cout<<"\n"<<var1<<" is a palindrome"<<endl:cout<<"\n"<<var1<<" is not a palindrome"<<endl;
        break;
    
    case '5':
-       if(ifneon(var1)){
-        cout<<"\n"<<var1<<" is a neon number"<<endl;
-    }
-    else{
-        cout<<"\n"<<var1<<" isn't a neon number"<<endl;
-
-    }
+       (ifneon(var1))?cout<<"\n"<<var1<<" is a neon number"<<endl:cout<<"\n"<<var1<<" isn't a neon number"<<endl;
        break;
    
    case '6':
@@ -261,31 +233,15 @@ int main(){
        break;
    
    case '7':
-       if(ifArm(var1)){
-        cout<<"\n"<<var1<<" is an Armstrong number"<<endl;
-    }
-    else {
-        cout<<"\n"<<var1<<" isn't an Armstrong number"<<endl;
-
-    }
+       (ifArm(var1))?cout<<"\n"<<var1<<" is an Armstrong number"<<endl:cout<<"\n"<<var1<<" isn't an Armstrong number"<<endl;
        break;
    
    case '8':
-       if (ifDisarium(var1)){
-        cout<<"\n"<<var1<<" is a Disarium number"<<endl;
-    }
-    else{
-        cout<<"\n"<<var1<<" isn't a Disarium number"<<endl; 
-    } 
+       (ifDisarium(var1))?cout<<"\n"<<var1<<" is a Disarium number"<<endl:cout<<"\n"<<var1<<" isn't a Disarium number"<<endl; 
        break;
    
    case '9':
-       if(ifHarshad(var1)){
-       cout<<"\n"<<var1<<" is a Harshad number"<<endl;
-   }
-   else{
-       cout<<"\n"<<var1<<" isn't a Harshad number"<<endl;
-   }
+       (ifHarshad(var1))?cout<<"\n"<<var1<<" is a Harshad number"<<endl:cout<<"\n"<<var1<<" isn't a Harshad number"<<endl;
        break;
    
    
